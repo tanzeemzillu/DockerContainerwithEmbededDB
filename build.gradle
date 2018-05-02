@@ -18,9 +18,6 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'docker'
 
-/*sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8 */
-
 bootJar {
 	baseName = 'UpdateServicedata'
 	version =  '1.0.0'
@@ -38,8 +35,10 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile("org.springframework.boot:spring-boot-starter-actuator")
 	runtime('org.apache.derby:derby')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	testCompile("junit:junit")
 }
 
 task buildDocker(type: Docker, dependsOn: build){
