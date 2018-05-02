@@ -1,7 +1,6 @@
 package de.real.UpdateServicedata.course;
 
 import de.real.UpdateServicedata.topic.Topic;
-import org.springframework.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
