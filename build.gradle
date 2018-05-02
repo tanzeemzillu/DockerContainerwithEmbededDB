@@ -38,7 +38,6 @@ dependencies {
 	compile("org.springframework.boot:spring-boot-starter-actuator")
 	runtime('org.apache.derby:derby')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	testCompile("junit:junit")
 }
 
 task buildDocker(type: Docker, dependsOn: build){
@@ -51,4 +50,5 @@ task buildDocker(type: Docker, dependsOn: build){
 	}
 	entryPoint(['java', '-Djava.security.egd=file:/dev/./urandom', '-jar', '/UpdateServicedata.jar'])
 }
+
 
