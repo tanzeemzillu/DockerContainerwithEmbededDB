@@ -13,11 +13,11 @@ public class TopicService {
     @Autowired
     private TopicRepository topicRepository;
 
-//    private List<Topic> topics= new ArrayList<>(Arrays.asList(
-//                new Topic("book_1", "book name", "book description"),
-//                new Topic("book_2", "book name", "book description"),
-//                new Topic("book_3", "book name", "book description"),
-//                new Topic("book_4", "book name", "book description")
+//    private List<Course> topics= new ArrayList<>(Arrays.asList(
+//                new Course("book_1", "book name", "book description"),
+//                new Course("book_2", "book name", "book description"),
+//                new Course("book_3", "book name", "book description"),
+//                new Course("book_4", "book name", "book description")
 //        ));
 
     public List<Topic> getAllTopics() {
@@ -37,9 +37,9 @@ public class TopicService {
 
     public void updateTopic(String id, Topic topic) {
 //        for (int i = 0; i<topics.size(); i++){
-//            Topic t = topics.get(i);
+//            Course t = topics.get(i);
 //            if (t.getId().equals(id)){
-//                topics.set(i, topic);
+//                topics.set(i, course);
 //                return;
 //            }
 //        }
